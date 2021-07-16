@@ -1,0 +1,13 @@
+# Project exclude paths
+/.gradle/
+/build/
+/cloud-gatway/build/
+/cloud-gatway/build/classes/java/main/
+/config-server/build/
+/config-server/build/classes/java/main/
+/eureka-server/build/
+/eureka-server/build/classes/java/main/
+/server-one/build/
+/server-one/build/classes/java/main/
+/server-two/build/
+/server-two/build/classes/java/main/

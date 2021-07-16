@@ -1,0 +1,6 @@
+server:
+  port: 8585
+
+feign:
+  circuitbreaker:
+    enabled: true

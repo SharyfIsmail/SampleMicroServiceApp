@@ -1,0 +1,11 @@
+dependencies {
+    implementation "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:$SpringCloudVersion"
+    implementation "org.springframework.cloud:spring-cloud-config-client:$SpringCloudVersion"
+    implementation "org.springframework.cloud:spring-cloud-starter-bootstrap:$SpringCloudVersion"
+    implementation "org.springframework.cloud:spring-cloud-starter-openfeign:$SpringCloudVersion"
+    implementation "org.springframework.boot:spring-boot-starter-web:$SpringBootStarterParentVersion"
+    implementation "org.springframework.cloud:spring-cloud-starter-sleuth:$SpringCloudVersion"
+    implementation "org.springframework.cloud:spring-cloud-sleuth-zipkin:$SpringCloudVersion"
+    implementation "org.springframework.cloud:spring-cloud-starter-netflix-hystrix:$hystrixVersion"
+}
+

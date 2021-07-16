@@ -1,0 +1,54 @@
+version: '3.1'
+
+services:
+
+  eureka-server:
+    build: ./eureka-server/
+    image: micro-eureka-server
+    ports:
+      - 8761:8761
+    restart: always
+
+  config-server:
+    build: ./config-server/
+    image: micro-config-server
+    restart: always
+    depends_on:
+      - eureka-server
+    ports:
+      - 8888:8888
+
+  cloud-gatway:
+    build: ./cloud-gatway/
+    image: micro-cloud-gatway
+    restart: always
+    depends_on:
+      - eureka-server
+      - config-server
+    ports:
+      - 8111:8111
+
+  server_one:
+    build: ./server-one/
+    image: micro-server-one
+    restart: always
+    depends_on:
+      - eureka-server
+      - config-server
+      - server_two
+      - cloud-gatway
+
+  server_two:
+    build: ./server-two/
+    image: micro-server-two
+    restart: always
+    depends_on:
+      - eureka-server
+      - config-server
+      - cloud-gatway
+
+  zipkin:
+    image: openzipkin/zipkin
+    restart: always
+    ports:
+      - 9411:9411

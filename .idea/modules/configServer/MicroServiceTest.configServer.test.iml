@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.system.module.type="sourceSet" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../configServer/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../configServer/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../configServer/src/test/java" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../../configServer/src/test/resources" type="java-test-resource" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="MicroServiceTest.configServer.main" />
+    <orderEntry type="module-library">
+      <library name="Gradle: org.springframework.boot:spring-boot-starter-web:2.4.4">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-lang3:" level="project" />
+    <orderEntry type="module-library">
+      <library name="Gradle: org.apache.commons:commons-collections4:4.4">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: org.springframework.boot:spring-boot-starter-test:2.4.4">
+        <CLASSES />
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+  <component name="TestModuleProperties" production-module="MicroServiceTest.configServer.main" />
+</module>
